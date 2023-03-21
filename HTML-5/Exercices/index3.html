@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>HTML5 : Les tableaux</h2>
+	<table width=100% border=6>
+		<tr>
+			<th>FirstName</th>
+			<th>Lastname</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+		</tr>
+	</table>
+	<h2>HTML5 : Les tableaux - 2</h2>
+	<table width=100% border="1">
+		<tr>
+			<th>Name</th>
+			<th colspan="2">Telephone</th>
+		</tr>
+		<tr>
+			<td>Bill Gates</td>
+			<td>11 22 33 44 55</td>
+			<td>55 44 33 22 11</td>
+		</tr>
+	</table>
+	<h2>HTML5 : Les tableaux - 3</h2>
+	<table style="width: 100%;" border="1">
+		<tr>
+			<th align=left>Name :</th>
+			<td>Bill Gates</td>
+		</tr>
+		<tr>
+			<th rowspan="2" align=left>Telephone :</th>
+			<td>11 22 33 44 55</td>
+		</tr>
+		<tr>
+			<td>55 44 33 22 11</td>
+		</tr>
+	</table>
+	<h2>HTML5 : Exercice 4</h2>
+	<table border="1" cellpadding="10" width="100%">
+		<tr>
+			<td rowspan="2" bgcolor="yellow">1</td>
+			<td colspan="2">2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td colspan="3">4</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+		</tr>
+		<tr>
+			<td colspan="4" bgcolor="yellow">5</td>
+		</tr>
+	</table>
+	<h2>HTML5 : Les tableaux - 4</h2>
+	<table border="1" cellspacing="0" width="100%">
+		<caption>The list of staff</caption>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Telephone</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>11 22 33 44 55</td>
+				<td>11 22 33 44 55</td>
+			</tr>
+			<tr>
+				<td>55 44 33 22 11</td>
+				<td>55 44 33 22 11</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>HTML5 : Exercice 5</h2>
+	<table border="1" cellspacing="0" width="500px">
+		<caption>Planning des taches par équipe</caption>
+		<thead>
+			<tr>
+				<th rowspan="2">Equipes</th>
+				<th colspan="10"> Janvier </th>
+				<th rowspan="2"></th>
+			</tr>
+			<tr>
+				<th colspan="2">Lundi</th>
+				<th colspan="2">Mardi</th>
+				<th colspan="2">Mercredi</th>
+				<th colspan="2">Jeudi</th>
+				<th colspan="2">Vendredi</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Equipe1</td>
+				<td colspan="6">Tach1</td>
+				<td colspan="4">Tach2</td>
+				<td rowspan="2">Semaine 1</td>
+			</tr>
+			<!-- A suivre -->
+			<tr>
+				<td>Equipe2</td>
+				<td colspan="5">Tach1</td>
+				<td colspan="5">Tach2</td>
+			</tr>
+			<tr>
+				<td>Equipe1</td>
+				<td colspan="2">Tach3</td>
+				<td colspan="6">Tach4</td>
+				<td colspan="2">Tach5</td>
+				<td rowspan="2">Semaine 2</td>
+			</tr>
+			<tr>
+				<td>Equipe2</td>
+				<td colspan="4">Tach3</td>
+				<td colspan="6">Tach4</td>
+			</tr>
+			<tr>
+				<td>Equipe1</td>
+				<td colspan="5">Tach5</td>
+				<td colspan="5">Tach6</td>
+				<td rowspan="2">Semaine 3</td>
+			</tr>
+			<!-- A suivre -->
+			<tr>
+				<td>Equipe2</td>
+				<td colspan="2">Tach5</td>
+				<td colspan="8">Tach6</td>
+			</tr>
+			<tr>
+				<td>Equipe1</td>
+				<td colspan="6">Tache7</td>
+				<td colspan="4">Tache8</td>
+				<td rowspan="2">Semaine 4</td>
+			</tr>
+			<tr>
+				<td>Equipe2</td>
+				<td colspan="5">Tache7</td>
+				<td colspan="5">Tache8</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>HTML5 : Liens</h2>
+	<a href="https://www.website.com">Visit our web site</a>
+	<br>
+	<a href="https://www.website.com" target="_blank">Visit Us</a>
+	<h2>HTML5 : Les images</h2>
+	<img src="artifact.gif" alt="Flower Artifact" width="460px" height="460px">
+	<br>
+	<a href="default.asp">
+		<img src="giphy.gif" alt="giphy">
+	</a>
+	<h2>HTML5 : Exercice 6</h2>
+	<p>
+		<img src="giphy.gif" alt="giphy" width="230px" height="160px">
+		Un paragraphe avec une image. Un paragraphe avec une image. Un paragraphe avec une image. Un paragraphe avec une image. Un paragraphe avec une image. Un paragraphe avec une image.
+	</p>
+	<h2>HTML5 : Les listes</h2>
+	<h3>An Unordered List</h3>
+	<ul>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+	<h3>An Ordered List</h3>
+	<ol>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+	<h3>An Alphabetical Ordered List</h3>
+	<ol type="a">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+	<h2>HTML5 : Exercice 7</h2>
+	<br>
+	<h1>HTML Cooking School</h1>
+	<h2>Recipes</h2>
+	<p>Since this is an HTML tutorial, all links go to the sponge recipe.</p>
+	<ol type="I">
+		<li>Cakes
+			<ul>
+				<li><a href="tepbystep-recipe.html">Plain Sponge</a></li>
+				<li><a href="tepbystep-recipe.html">Chocolate Cake</a></li>
+				<li><a href="tepbystep-recipe.html">Apple Tea Cake</a></li>
+			</ul>	
+		</li>
+		<li>Biscuits
+			<ul>
+				<li><a href="stepbystep-recipe.html">ANZAC Biscuits</a></li>
+      		<li><a href="stepbystep-recipe.html">Jam Drops</a></li>
+      		<li><a href="stepbystep-recipe.html">Melting Moments</a></li>
+			</ul>
+		</li>
+		<li>Breads/quickbreads
+			<ul>
+				<li><a href="stepbystep-recipe.html">Damper</a></li>
+				<li><a href="stepbystep-recipe.html">Scones</a></li>
+			</ul>
+		</li>
+	</ol>
+</body>
+</html>
