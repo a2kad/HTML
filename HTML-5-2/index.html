@@ -54,6 +54,43 @@
 						Feminin <input type="radio" name="sexe" id="sexe" value="F">
 					</td>
 				</tr>
+				<tr>
+					<td><label for="photo">Photo</label></td>
+					<td><input type="file" name="photo" id="photo" value="Choisir un fichier"></td>
+				</tr>
+				<tr>
+					<td><label for="pays">Pays</label></td>
+					<td><select name="pays" id="pays">
+						<option value="france">France</option>
+						<option value="espagne">Espagne</option>
+						<option value="italie">Italie</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><label for="lang">Les langages préferés</label></td>
+					<td><select name="lang" id="lang" multiple>
+						<option value="java">Java</option>
+						<option value="c">C</option>
+						<option value="cpp">C++</option>
+						<option value="php">PHP</option>
+					</select>
+					(Pour faire plusieurs choix maintenir CTRL)
+				</td>
+				</tr>
+				<tr>
+					<td><label for="domain">Domaines d'activités</label></td>
+					<td>
+						<input type="checkbox" name="domain" id="domain">Informatique
+						<input type="checkbox" name="domain" id="domain">Gestion
+						<input type="checkbox" name="domain" id="domain">Pédagogie
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="Envoyer">
+						<input type="reset" value="Annuler">
+					</td>
+				</tr>
 			</table>
 		</fieldset>
 	</form>
