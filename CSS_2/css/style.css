@@ -41,3 +41,28 @@ a {
 a:hover, a:active {
     background-color: red;
 }
+ul.a {
+    list-style-type:armenian;
+}
+ul.b {
+    list-style-type: lower-greek;
+}
+ol.c{
+    list-style-type:lower-roman;
+}
+ol.d{
+    list-style-type: upper-alpha;
+}
+h1.hidden{
+    display:none;
+}
+li.inline{
+    display: inline;
+}
+div.fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
