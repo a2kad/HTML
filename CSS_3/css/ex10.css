@@ -1,0 +1,14 @@
+h1 {
+    text-shadow: 0 0 3px #FF0000;
+ }
+ .content {
+    text-shadow: 0 0 3px green;
+ }
+ div.polaroid {
+    width: 250px;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  
+    text-align: center;
+ }
+ div.container {  
+    padding: 10px;
+ } 
