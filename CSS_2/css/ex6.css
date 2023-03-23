@@ -1,0 +1,23 @@
+.table{
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+.title{
+    background-color: grey;
+    display: table-caption;
+    font-weight: bold;
+    font-size: larger;
+}
+.heading {
+    display: table-row;
+    font-weight: bold;
+}
+.row{
+    display:table-row;
+}
+.cell{
+    display: table-cell;
+    border: 1px solid gray;
+    padding: 5px;
+}
