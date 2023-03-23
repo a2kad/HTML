@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+
+.msg { margin: 0px; position: fixed; width: 100%; }
+.msg-mobile { display: none; }
+
+.nav { padding: 20px; float: left; margin-top: 30px; }
+.left  { background-color: #2196F3; width: 20%; }
+.main  { background-color: #f1f1f1; width: 60%; }
+.right { background-color: #4CAF50; width: 20%; }
+
+@media ( max-width :800px) {
+	.left, .main, .right {
+		width: 100%;
+	}
+	.msg-screen {
+		display: none;
+	}
+	.msg-mobile {
+		display: inherit;
+	}
+}

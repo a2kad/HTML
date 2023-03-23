@@ -23,3 +23,29 @@ div.shadow{
     background-color: yellow;
     box-shadow: 0px 0px 10px grey;
 }
+* {
+    box-sizing: border-box;
+}
+.left{ 
+    background-color: #2196F3;
+    padding: 20px;
+    float: left;
+    width: 20%;
+}
+.main{ 
+    background-color: #f1f1f1;
+    padding: 20px;
+    float: left;
+    width: 60%;
+}
+.right{ 
+    background-color: #4caf50;
+    padding: 20px;
+    float: left;
+    width: 20%;
+}
+@media (max-width:800px) {
+    .left, .main, .right{
+        width: 100%;
+    }
+}
