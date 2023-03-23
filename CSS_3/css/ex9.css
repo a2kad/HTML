@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    height: 2000px;
+}
+.icon-bar{
+    position: fixed;
+    top: 20%;
+}
+a {
+    display: block;
+}
+.icon-bar a:hover{
+    background-color: #000;
+}
+.facebook {
+    background: #3B5998;
+    color: white;
+    padding: 3px;
+  }
+  .twitter {
+    background: #55ACEE; 
+    color: white;
+    padding: 3px;
+  }
+  .google {
+    background: #dd4b39; 
+    color: white;
+    padding: 3px;
+  }
+  .linkedin {
+    background: #007bb5; 
+    color: white;
+    padding: 3px;
+  }
+  .youtube {
+    background: #bb0000; 
+    color: white;
+    padding: 3px;
+  }
+  .content {
+    margin-left: 75px; 
+    font-size: 30px;
+  }
+  
