@@ -9,14 +9,18 @@
 }
 html, body{
     height: 100%;
-
 }
 a{
     text-decoration: none;
 }
 div{
-    display: block;
-    min-height: 100%;
+    display: inline-block;
+
+    min-height: 100vh;
+}
+p{
+    line-height: 2em;
+    text-align: justify;
 }
 div.competences{
     width: 30%;
@@ -29,7 +33,9 @@ div.experiences{
     padding: 20px;
 }
 div.info{
+    align-self: auto;
     width: 30%;
+    min-height: 100vh;
     float: left;
     background-color: #333333;
     color: #EEEEEE;
@@ -47,9 +53,11 @@ img {
 }
 h2{
     padding-top: 10px;
+    line-height: 2.5em;
 }
 h3{
     padding-top: 5px;
+    line-height: 2.5em;
 }
 h2.name{
     text-align: center;
