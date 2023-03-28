@@ -22,17 +22,17 @@ p{
     line-height: 2em;
     text-align: justify;
 }
-div.col#competences{
+div.competences{
     width: 30%;
     float: left;
     padding: 20px;
 }
-div.col#experiences{
+div.experiences{
     width: 40%;
     float: left;
     padding: 20px;
 }
-div.col#info{
+div.info{
     text-align: justify;
     width: 30%;
     min-height: 100vh;
@@ -41,7 +41,7 @@ div.col#info{
     color: #EEEEEE;
     padding: 20px;
 }
-#info a{
+.info a{
     color: #EEEEEE;
 }
 img {
