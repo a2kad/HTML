@@ -22,18 +22,18 @@ p{
     line-height: 2em;
     text-align: justify;
 }
-div.competences{
+div.col#competences{
     width: 30%;
     float: left;
     padding: 20px;
 }
-div.experiences{
+div.col#experiences{
     width: 40%;
     float: left;
     padding: 20px;
 }
-div.info{
-    align-self: auto;
+div.col#info{
+    text-align: justify;
     width: 30%;
     min-height: 100vh;
     float: left;
@@ -41,7 +41,7 @@ div.info{
     color: #EEEEEE;
     padding: 20px;
 }
-.info a{
+#info a{
     color: #EEEEEE;
 }
 img {
