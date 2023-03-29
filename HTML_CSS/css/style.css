@@ -1,31 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 body {
-    padding: 2em; 
+    font-family: 'Roboto Condensed', sans-serif;
+}
+a{
+    text-decoration: none;
 }
 .wrapper {
-    display: flex;  
-    flex-flow: row wrap;
-    font-weight: bold;
-    text-align: center; 
-}
 
-  .wrapper > * {
-    padding: 10px;
-    flex: 1 100%;
 }
 .header {
-
+display: flex;
+}
+.header > div{
+    flex: 0 1 auto;
+}
+.header img{
+    height: 100px;
+}
+.logo img{
+    height: 10vh;
+}
+.logo-text{
+    width: 80%;
+    padding-top: 2vh;
+    font-family: 'Aladin', cursive;
+    font-size: 5vh;
+    font-weight:600;
+    color: #333;
+    /*font: 3vh sans-serif;
+    font-weight: 700;*/
 }
 .nav{
+
+}
+ul.menu {
+    display: flex;
+    background-color: #333;
+    padding: 2vh;
+}
+ul.menu li{
+    flex: 1;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 3vh;
+    text-transform: uppercase;
+    font-size: 2vh;
+}
+ul.menu li a{
+    color: #EEE;
+}
+.wrapper_main{
+    background: url(/HTML_CSS/img/Mont-Saint-Michel.jpg) no-repeat;
+    background-size: 100%;
     width: 100%;
-}
-.footer {
 
 }
-.main {
-    text-align: left;
+.main_text{
+    color: #EEE;
+    padding: 5vh 40vw 15em 5vw;
+    z-index: 100;
+    font-size: 2vw;
+    font-weight: 700;
+    line-height: 1.5;
 }
-@media all and (min-width: 800px) {
-    .main    { order: 1; }
-    .footer  { order: 2; }
+.footer{
+    background-color: #333;
+    padding: 2vh;
+    margin-top: 1vh;
+    color: #EEE;
+    text-align: center;
+    font-size: 1.5vh;
 }
-
