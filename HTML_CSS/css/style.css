@@ -9,20 +9,48 @@ a{
 }
 .header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .header > div{
     flex: 0 1 auto;
+    padding: 0 1vw 0 1vw;
 }
 .logo img{
+    
     height: 10vh;
 }
 .logo-text{
-    width: 80%;
-    padding-top: 2vh;
     font-family: 'Permanent Marker', cursive;
-    font-size: 5vh;
+    font-size: 3vw;
     font-weight:600;
     color: #333;
+}
+.ra{
+    width: 300px;
+    vertical-align: middle;
+}
+.fa-brands{
+    padding: 14px;
+    font-size: 1.5vw;
+    background-color: #333;
+    color: #EEE;
+    border-radius: 50%;
+}
+.fa-facebook:hover{
+    background-color: #3B5998;
+}
+.fa-instagram:hover{
+    background-color: #c32aa3;
+}
+.fa-youtube:hover{
+    background-color: #ff0000;
+}
+.fa-twitter:hover{
+    background-color: #1da1f2;
+}
+.fa-pinterest:hover{
+    background-color: #bd081c;
 }
 .navbar{
     overflow: hidden;
