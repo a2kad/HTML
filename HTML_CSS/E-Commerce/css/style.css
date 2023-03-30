@@ -28,7 +28,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 5px 0;
     background-color: #333;
     color: #eee;
 }
@@ -69,11 +69,53 @@ header img{
     outline: none;
 }
 .navBar{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    border: none;
+    background-color: #333;
+        
 }
 .navBar a{
-    border: 1px solid #999;
+    text-decoration: none;
+    color: #eee;
+    padding: 7px 20px;
+    /*text-transform: uppercase;*/
+    font-weight: 500;
+    /*letter-spacing: 0.1em;*/
+}
+.dropDwn{
+    position: relative;
+    display: inline-block;    
+    
+}
+.dropBtn{
+    border: none;
+    color: #eee;
+    background-color: #333;
+    padding: 7px 20px;
+    /*text-transform: uppercase;*/
+    font-size: 17px;
+    font-weight: 500;
+    /*letter-spacing: 0.1em;*/
+}
+.dropDwn__content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 100px;
+}
+.dropDwn__content a{
+    display: block;
+    background-color: #999;
+}
+.dropDwn:hover .dropDwn__content{
+    display: block;
+}
+.dropDwn:hover .dropBtn{
+    background-color: #999;
+}
+.dropdown-content a:hover{
+    background-color: #999;
 }
