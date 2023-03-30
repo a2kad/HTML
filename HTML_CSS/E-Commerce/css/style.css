@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font: 1em sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.main{
+    width: 80vw;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pub{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #333333;
+    color: #eee;
+}
+header img{
+    width: 80px;
+    margin: 10px;
+}
+.user-cart img{
+    width: 40px;
+    opacity: 50%;
+}
+.user-cart img:hover{
+    opacity: 80%;
+}
+.search{
+    display: flex;
+}
+.searchTherm{
+    width: 300px;
+    border:  1px solid #999999;
+    border-radius: 3px 0 0 3px;
+    border-right: none;
+    padding: 5px;
+    height: 24px;
+    outline: none;
+    color: #999999;
+}
+.search-btn{
+    width: 40px;
+    height: 36px;
+    border: 1px solid #999999;
+    background: none;
+    text-align: center;
+    color: #999999;
+    border-radius: 0 3px 3px 0;
+    border-left: none;
+    font-size: 20px;
+    outline: none;
+}
