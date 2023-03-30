@@ -23,11 +23,13 @@ html, body{
 }
 .pub{
     width: 100%;
+    font-size: 12px;
+    letter-spacing: 0.05em;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px;
-    background-color: #333333;
+    background-color: #333;
     color: #eee;
 }
 header img{
@@ -46,23 +48,32 @@ header img{
 }
 .searchTherm{
     width: 300px;
-    border:  1px solid #999999;
+    border:  1px solid #999;
     border-radius: 3px 0 0 3px;
     border-right: none;
     padding: 5px;
     height: 24px;
     outline: none;
-    color: #999999;
+    color: #999;
 }
 .search-btn{
     width: 40px;
     height: 36px;
-    border: 1px solid #999999;
+    border: 1px solid #999;
     background: none;
     text-align: center;
-    color: #999999;
+    color: #999;
     border-radius: 0 3px 3px 0;
     border-left: none;
     font-size: 20px;
     outline: none;
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navBar a{
+    border: 1px solid #999;
 }
