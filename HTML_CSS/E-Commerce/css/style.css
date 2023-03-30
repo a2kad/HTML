@@ -14,7 +14,7 @@ html, body{
     justify-content: center;
 }
 .main{
-    width: 80vw;
+    width: 1300px;
 }
 .header{
     display: flex;
@@ -118,4 +118,29 @@ header img{
 }
 .dropdown-content a:hover{
     background-color: #999;
+}
+.slider{
+    width: 1300px;
+    height: 850px;
+    overflow: hidden;
+}
+.middle{
+
+}
+.navigation{
+    position: absolute;
+    bottom: 16px;
+    left:50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    height: 8px;
+    width: 8px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #333;
+    border-radius: 50%;
+    opacity: .8;
+    transition: all .4s ease;
 }
