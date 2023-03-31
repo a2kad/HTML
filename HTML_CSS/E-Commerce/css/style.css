@@ -266,3 +266,13 @@ input[name="r"]{
 .footer p{
     padding: 15px;
 }
+/* -----===== Styles Of Forms =====----- */
+main{
+    display: flex;
+    justify-content: center;
+}
+.creer-compt{
+    width: 80%;
+    margin: 25px 0;
+    
+}
