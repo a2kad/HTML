@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -88,7 +89,6 @@ header img{
 .dropDwn{
     position: relative;
     display: inline-block;    
-    
 }
 .dropBtn{
     border: none;
@@ -104,11 +104,15 @@ header img{
     display: none;
     position: absolute;
     z-index: 1;
-    min-width: 100px;
+    min-width: 200px;
 }
+
 .dropDwn__content a{
     display: block;
     background-color: #999;
+    color: #333;
+    font-size: 17px;
+    font-weight: bold;
 }
 .dropDwn:hover .dropDwn__content{
     display: block;
@@ -182,4 +186,83 @@ input[name="r"]{
 }
 #r4:checked ~ .s1{
     margin-left: -75%;
+}
+.product{
+    display: flex;
+}
+.category{
+    width: 40%;
+}
+
+.category ul li{
+    list-style: none;
+    padding: 10px ;
+    margin-top: 5px;
+    text-align: center;
+    border: 1px solid #999;
+}
+.category ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+.category ul li:hover{
+    background-color: #CCC;
+    font-weight: 600;
+}
+.prod-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product__card{
+    height: 400px;
+    width: 280px;
+    border: 1px solid #999;
+    padding: 25px;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+}
+.product__card img{
+    width: 250px;
+}
+.prod-name{
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+}
+.prod-name a{
+    text-decoration: none;
+    color: #333;
+}
+.prod-price{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 36px;
+    color: red;
+    font-weight: 800;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.prod-price sup{
+    font-size: 24px;
+    font-weight: 600;
+}
+.footer{
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    width: 100%;
+    background-color: #333;
+    color: #eee;
+}
+.footer p{
+    padding: 15px;
 }
