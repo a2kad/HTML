@@ -329,3 +329,40 @@ label strong, p strong{
     width: 25px;
     height: 25px;
 }
+.product-card{
+    display: flex;
+    width: 1300px;
+}
+.product-img{
+    width: 30%;
+}
+.product-desc{
+    width: 70%;
+    margin: 10px;
+    padding: 20px;
+}
+.product-img img{
+    width: 350px;
+    margin: 10px;
+    padding: 20px;
+}
+.product-desc h1, .product-desc h2 {
+    padding: 20px 0;
+}
+.product-desc p{
+    line-height: 1.5;
+    text-align: justify;
+}
+.product-desc p strong{
+    font-weight: 600;
+    color: #333;
+}
+.product-desc h3{
+    padding: 30px 0;
+    font-size: 30px;
+}
+.product-desc h3 strong{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: red;
+    font-size: 45px;
+}
