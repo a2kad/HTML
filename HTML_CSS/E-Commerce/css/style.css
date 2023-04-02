@@ -267,15 +267,16 @@ input[name="r"]{
     padding: 15px;
 }
 /* -----===== Styles Of Forms =====----- */
-main{
+.form-compt{
     display: flex;
     justify-content: center;
-}
+}/**/
 .creer-compt{
     width: 80%;
     margin: 25px 0;
     border: 1px solid #ccc;
     padding: 25px;
+
 }
 input[type=text], [type=email], [type=date], [type=password]{
     width: 100%;
