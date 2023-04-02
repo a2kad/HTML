@@ -286,3 +286,45 @@ input[type=text], [type=email], [type=date], [type=password]{
     border-radius: 4px;
     box-sizing: border-box;
 }
+.creer-compt label {
+    font-size: 20px;
+}
+label strong, p strong{
+    font-weight: 600;
+    color: red;
+}
+.creer-compt p
+{
+    font-size: 20px;
+    padding: 20px 0;
+}
+.form-subscribe{
+    margin: 10px 0;
+    text-align: justify;
+}
+.form-subscribe label{
+    margin-left: 30px;
+}
+.form-subscribe input{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.submit{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: #333;
+    color: #CCC;
+}
+.submit:hover{
+    background-color: #222;
+}
+.submit:active{
+    background-color: #010101;
+}
+#m, #mme{
+    width: 25px;
+    height: 25px;
+}

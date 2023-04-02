@@ -27,7 +27,7 @@
                     </div>
                     <div class="user-cart">
                         <img src="/HTML_CSS/E-Commerce/img/shopping-cart.png" alt="Cart">
-                        <img src="/HTML_CSS/E-Commerce/img/user.png" alt="">
+                        <a href="/HTML_CSS/E-Commerce/form.html"><img src="/HTML_CSS/E-Commerce/img/user.png" alt=""></a>
                     </div>
                 </div>
             </header>
@@ -65,34 +65,37 @@
                 <div class="creer-compt">
                     <h2>Créer un nouveau compte</h2>
                     <form action="">
-                        <p>Civilité *</p>
-                        <input type="radio" name="civilite" id="mme" value="mme">
+                        <p>Civilité <strong>*</strong></p>
+                        <input type="radio" name="civilite" id="mme" value="mme" required>
                         <label for="mme">Mme</label>
                         <input type="radio" name="civilite" id="m" value="m">
                         <label for="m">M</label>
+                        <br><br>
+                        <label for="prenom">Prénom <strong>*</strong></label>
+                        <input type="text" id="prenom" name="prenom" required>
+                        <label for="nom">Nom <strong>*</strong></label>
+                        <input type="text" id="nom" name="nom" required>
+                        
+                        <label for="ne">Date de naissance <strong>*</strong></label>
+                        <input type="date" name="ne" id="ne" required>
+                        
+                        <label for="email">Adresse e-mail <strong>*</strong></label>
+                        <input type="email" name="email" id="email" required>
                         <br>
-                        <label for="prenom">Prénom *</label>
-                        <input type="text" id="prenom" name="prenom">
-                        <label for="nom">Nom</label>
-                        <input type="text" id="nom" name="nom">
+                        <label for="pass">Mot de passe <strong>*</strong>(au moins 8 caractères et 3 chiffres)</label>
+                        <input type="password" name="pass" id="pass" minlength="8" pattern="[A-Za-z]{8,}[0-9]{3,}" required>
                         <br>
-                        <label for="ne">Date de naissance *</label>
-                        <input type="date" name="ne" id="ne">
-                        <br>
-                        <label for="email">Adresse e-mail*</label>
-                        <input type="email" name="email" id="email">
-                        <br>
-                        <label for="pass">Mot de passe * (au moins 8 caractères)</label>
-                        <input type="password" name="pass" id="pass">
-                        <br>
+                        <div class="form-subscribe">
                         <input type="checkbox" name="subscribe" id="subscribe">
                         <label for="subscribe">Oui, je souhaite être informé(e) régulièrement des promotions et nouveautés par e-mail. Je peux me désinscrire à tout moment.</label>
+                        </div>
                         <br>
-                        <input type="checkbox" name="agree" id="agree">
-                        <label for="agree">En cochant cette case, je déclare avoir pris connaissance et accepté les Conditions Générales de Ventes, les Conditions Générales d’Utilisation et la Charte de protection des données personnelles.*</label>
+                        <div class="form-subscribe">
+                        <input type="checkbox" name="agree" id="agree" required>
+                        <label for="agree">En cochant cette case, je déclare avoir pris connaissance et accepté les Conditions Générales de Ventes, les Conditions Générales d’Utilisation et la Charte de protection des données personnelles.<strong>*</strong></label>
+                        </div>
                         <br>
-                        <input type="submit" value="Créer un compte client">
-
+                        <input type="submit" class="submit" value="Créer un compte client">
                     </form>
                 </div>
             </main>
