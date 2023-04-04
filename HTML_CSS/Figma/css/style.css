@@ -74,3 +74,38 @@ p.upper{
     font-size: 32px;
     font-weight: 700;
 }
+.article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.banner {
+    height: 228px;
+    width: 280px;
+    margin: 10px 5px;
+    background: url(/HTML_CSS/Figma/img/montre.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.banner .textTop p, .banner .textBelow p{
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+}
+.textTop{
+    background-color: #3A184A;
+    padding: 0 5px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+.textBelow{
+    background-color: #3A184A;
+    padding: 0 5px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
