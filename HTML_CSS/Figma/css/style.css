@@ -16,7 +16,7 @@ html, body {
 }
 .logo{
     width: 50%;
-    padding: 16px 0 16px 150px;
+    padding: 16px 0 16px 170px;
 }
 .nav{
     width: 30%;
@@ -65,14 +65,15 @@ p.upper{
     font-size: 28px;
     color: #FFF;
     background-color: #F55178;
-    padding: 10px 50px;
+    padding: 10px 30px 10px 50px;
     border: none;
     border-radius: 30px;
 }
-.text-block button span{
+.text-block button i{
     color: #BD3656;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
+
 }
 .article {
     width: 100%;
