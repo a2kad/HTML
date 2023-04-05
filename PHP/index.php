@@ -110,7 +110,54 @@
 		while($x <= 5){
 		echo "Le numéro est : $x <br>";
 		$x++;
-}
+		}
+
+		echo"<br>";
+	
+		for ($x = 6; $x <= 10; $x++){
+			echo "Le numéro est : $x <br>";
+		}
+
+		echo"<br>";
+
+		$couleurs = array("rouge","vert","blue");
+
+		foreach ($couleurs as $value){
+			echo "$value <br>";
+		}
+		echo"<br>";
+
+		for ($i=1 ; $i<=5 ; $i++) {
+			echo '*';
+		}
+		echo "<br>";
+		echo "<hr>";
+		
+		for ($j=1 ; $j<=5 ; $j++) {
+			for ($i=1 ; $i<=10 ; $i++) {
+				echo '*';
+			}
+				echo "<br>";
+			}
+		echo "<hr>";
+
+		echo "<table width=100% border=1>";
+
+		echo "<tr>";
+		echo "<th> * </th>";
+		for ($i=1 ; $i<=10 ; $i++) {
+			echo "<th>". $i . "</t>";
+		}
+		echo "</tr>";
+
+		for ($j=1 ; $j<=10 ; $j++) {
+			echo "<tr align=center><th>$j</th>";
+			for ($k=1 ; $k<=10 ; $k++) {
+				echo "<td>". $k*$j . "</td>";
+			}
+			echo "</tr>";
+		}
+		echo "</table>";
     ?>
 </body>
 </html>
