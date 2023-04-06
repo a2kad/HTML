@@ -79,6 +79,7 @@ N'oubliez pas que l'organisation de vos produits en catégories claires et logiq
 
 N'oubliez pas que la qualité des images et des descriptions de vos produits peut avoir un impact important sur les ventes et la satisfaction des clients. Prenez donc le temps de créer des descriptions claires et détaillées et des images de qualité pour chaque produit de votre boutique WooCommerce. 
 
+## Yoast SEO
 ### Voici les étapes pour installer l'extension Yoast SEO dans WordPress : 
 
 1. Connectez-vous à votre site WordPress en tant qu'administrateur. 
