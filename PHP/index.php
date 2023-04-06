@@ -140,7 +140,7 @@
 				echo "<br>";
 			}
 		echo "<hr>";
-		
+
 
 		echo "<table width=100% border=1>";
 
@@ -159,6 +159,21 @@
 			echo "</tr>";
 		}
 		echo "</table>";
+
+		echo "<br>";
+		echo "<hr>";
+
+		$technologies = [
+			"Langages" => ["PHP","JAVA","PYTHON"],
+			"Framework" => ["SYMFONY","SPRING","DJANGO"],
+			"Cms" => ["WORDPRESS","MAGNOLIA","MEZZANINE"]
+		];
+		foreach ($technologies as $clef => $technologies){
+			echo '<b>'.$clef.'</b>';
+			foreach ($technologies as $value){
+				echo $value.' ';
+			}
+		}
     ?>
 </body>
 </html>
