@@ -1,9 +1,15 @@
 # WordPress
+
+> Ce fichier est un devoir.
+>> Auteur : RESHETNIKOV Ruslan
+>> Date d'achèvement : 06/04/2023
+>> Organisation : Afpa - Centre du Havre
+>> Formation : Développeur web et web mobile
+
 ## WooCommece
 
 ### Voici les étapes pour installer WooCommerce dans WordPress : 
 
- 
 
 1. Tout d'abord, connectez-vous à votre site WordPress en tant qu'administrateur. 
 
