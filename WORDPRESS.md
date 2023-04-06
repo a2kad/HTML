@@ -1,7 +1,7 @@
 # WordPress
 ## WooCommece
 
-* Voici les étapes pour configurer l'extension Yoast SEO dans WordPress :
+### Voici les étapes pour configurer l'extension Yoast SEO dans WordPress :
 
 1. Connectez-vous à votre site WordPress en tant qu'administrateur.
 
