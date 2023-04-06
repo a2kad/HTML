@@ -110,7 +110,7 @@
 		while($x <= 5){
 		echo "Le numéro est : $x <br>";
 		$x++;
-}
+	}
     ?>
 </body>
 </html>
