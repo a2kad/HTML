@@ -111,6 +111,27 @@
 		echo "Le numéro est : $x <br>";
 		$x++;
 	}
+	echo '<br>';
+	echo '<table border=1 width=100%>';
+	
+	for($i = 1; $i <= 10; $i++){
+		echo '<tr>';
+		for ($j = 1; $j <= 10; $j++){
+			echo'<td>'.$i*$j.'</td>';
+		}
+		echo '</tr>';
+	}
+
+	echo '</table>';
+
     ?>
+	<table border=1 width=100%>
+		<tr>
+			<th></th>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+	</table>
 </body>
 </html>
