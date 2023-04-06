@@ -110,3 +110,27 @@ p.upper{
     top: 50%;
     left: 30%;
 }
+.cares{
+
+}
+.table{
+    display: table;
+}
+.tableBody{
+    display: table-row-group;
+}
+.tableRow{
+    display: table-row;
+}
+.tableCell{
+    display: table-cell;
+    height: 400px;
+    width: 400px;
+    margin: 8px;
+}
+.pic1{
+    background-image: url(/HTML_CSS/Figma/img/phone.jpg);
+}
+.pic2{
+    background-image: url(/HTML_CSS/Figma/img/phone2.png);
+}
