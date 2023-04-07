@@ -189,7 +189,7 @@ p.upper{
     justify-content: space-between;
 }
 .btn{
-    padding: 10px 50px;
+    padding: 8px 40px;
     border: none;
     color: #FFF;
     font-size: 20px;
@@ -200,4 +200,43 @@ p.upper{
 }
 .btn2{
     background-color: #BD3656;
+}
+.footer {
+    height: 300px;
+    width: 100%;
+    background-color: #3A184A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email img{
+    width: 194px;
+}
+.touch{
+    color: #FFF;
+    margin: 0 55px;
+}
+.touchSmall{
+    font-size: 12px;
+}
+.touchBig{
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: bold;
+}
+.contact{
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #220F2C;
+    height: 100%;
+    padding: 0 20px;
+    margin: 0 55px;
+        display: flex;
+    align-items: center;
+}
+.contactTxt{
+
 }
