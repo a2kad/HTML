@@ -6,9 +6,35 @@
 >> Organisation : Afpa - Centre du Havre  
 >> Formation : Développeur web et web mobile
 
+## Wampserveur
+### Les instructions pour installer Wampserver sur Windows :
+
+1. Tout d'abord, rendez-vous sur le site web officiel de Wampserver et téléchargez le fichier d'installation le plus récent.
+
+2. Double-cliquez sur le fichier téléchargé pour lancer l'installation de Wampserver.
+
+3. Lorsque vous êtes invité à choisir votre langue préférée, sélectionnez votre langue et cliquez sur "OK".
+
+4. Lisez le contrat de licence, acceptez-le et cliquez sur "Suivant".
+
+5. Choisissez le répertoire d'installation de Wampserver et cliquez sur "Suivant". Vous pouvez laisser les options par défaut si vous n'êtes pas sûr.
+
+6. Sélectionnez les composants que vous souhaitez installer. Par défaut, toutes les composantes nécessaires sont cochées, vous pouvez donc les laisser telles quelles. Cliquez sur "Suivant".
+
+7. Choisissez le répertoire où vous souhaitez installer les fichiers Web de Wampserver. Cliquez sur "Suivant".
+
+8. Si vous êtes invité à installer un pilote, acceptez l'installation en cliquant sur "Installer".
+
+9. Pendant l'installation, vous serez invité à configurer les paramètres de votre pare-feu Windows. Il est recommandé d'autoriser l'accès pour les réseaux publics et privés. Cliquez sur "Autoriser l'accès".
+
+10. Enfin, lorsque l'installation est terminée, cliquez sur "Terminer" pour fermer l'assistant d'installation.
+
+11. Une fois l'installation terminée, vous pouvez ouvrir Wampserver en double-cliquant sur l'icône dans la barre des tâches de Windows. Si l'icône est en rouge, cela signifie que Wampserver n'est pas en cours d'exécution. Si l'icône est en vert, tout est prêt !
+
+Vous pouvez maintenant utiliser Wampserver pour développer et tester vos sites web localement sur votre ordinateur.
 ## WooCommece
 
-### Voici les étapes pour installer WooCommerce dans WordPress : 
+### Les étapes pour installer WooCommerce dans WordPress : 
 
 
 1. Tout d'abord, connectez-vous à votre site WordPress en tant qu'administrateur. 
@@ -31,7 +57,7 @@
 
 10. Vous êtes maintenant prêt à commencer à vendre sur votre boutique WooCommerce ! 
 
-### Voici les étapes pour ajouter des catégories de produits à WooCommerce dans WordPress : 
+### Les étapes pour ajouter des catégories de produits à WooCommerce dans WordPress : 
 
 1. Connectez-vous à votre site WordPress en tant qu'administrateur. 
 
@@ -55,7 +81,7 @@
 
 N'oubliez pas que l'organisation de vos produits en catégories claires et logiques peut aider vos clients à trouver facilement les produits qu'ils recherchent et améliorer l'expérience de navigation sur votre site WooCommerce. 
 
-### Voici les étapes pour ajouter des produits à WooCommerce dans WordPress : 
+### Les étapes pour ajouter des produits à WooCommerce dans WordPress : 
 
 1. Connectez-vous à votre site WordPress en tant qu'administrateur. 
 
@@ -80,7 +106,7 @@ N'oubliez pas que l'organisation de vos produits en catégories claires et logiq
 N'oubliez pas que la qualité des images et des descriptions de vos produits peut avoir un impact important sur les ventes et la satisfaction des clients. Prenez donc le temps de créer des descriptions claires et détaillées et des images de qualité pour chaque produit de votre boutique WooCommerce. 
 
 ## Yoast SEO
-### Voici les étapes pour installer l'extension Yoast SEO dans WordPress : 
+### Les étapes pour installer l'extension Yoast SEO dans WordPress : 
 
 1. Connectez-vous à votre site WordPress en tant qu'administrateur. 
 
@@ -104,7 +130,7 @@ N'oubliez pas que la qualité des images et des descriptions de vos produits peu
 
 N'oubliez pas que Yoast SEO est une extension très puissante pour WordPress qui peut aider votre site à être mieux compris et indexé par les moteurs de recherche. Prenez le temps de configurer et d'utiliser les fonctionnalités de Yoast SEO pour améliorer la visibilité et le classement de votre site dans les résultats de recherche. 
 
-### Voici les étapes pour configurer l'extension Yoast SEO dans WordPress : 
+### Les étapes pour configurer l'extension Yoast SEO dans WordPress : 
 
 1. Connectez-vous à votre site WordPress en tant qu'administrateur. 
 
