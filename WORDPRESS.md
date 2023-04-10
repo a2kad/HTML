@@ -2,7 +2,7 @@
 
 > Ce fichier est un devoir.  
 >> Auteur : RESHETNIKOV Ruslan  
->> Date d'achèvement : 06/04/2023  
+>> Date d'achèvement : 06 - 10/04/2023  
 >> Organisation : Afpa - Centre du Havre  
 >> Formation : Développeur web et web mobile
 
