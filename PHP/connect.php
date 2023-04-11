@@ -5,6 +5,6 @@ if (!$con){
     die (mysqli_error($con));
 }
 else{
-    echo'Ok';
+    echo'Connection Ok';
 }
 ?>

@@ -7,6 +7,17 @@
     <title>Afichage de db</title>
 </head>
 <body>
+    <p><a href="/PHP/user.php">Créer un utilisateur =></a></p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Action</th>
+            </tr>
+        </thead>
     <?php
     include 'connect.php';
     $sql = "select * from user";
@@ -17,31 +28,18 @@
             $nom = $row['nom'];
             $email = $row['email'];
             $password = $row['password'];
+            echo '<tbody>
+                    <tr>
+                        <th>'.$id.'</th>
+                        <td>'.$nom.'</td>
+                        <td>'.$email.'</td>
+                        <td>'.$password.'</td>
+                        <td></td>
+                    </tr>
+                </tbody>';
         }
-        echo '<tr>
-                <th>'.$id.'</th>
-                <td>'.$nom.'</td>
-                <td>'.$email.'</td>
-                <td>'.$password.'</td>
-                <td></td>
-            </tr>';
     }
     ?>
-    <table border="1">
-        <tr>
-            <th>ID</th>
-            <th>Nom</th>
-            <th>Email</th>
-            <th>Password</th>
-            <th>Action</th>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+</table>
 </body>
 </html>

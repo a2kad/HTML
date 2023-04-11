@@ -7,6 +7,8 @@
     <title>Add user</title>
 </head>
 <body>
+<p><a href="/PHP/affichage.php"><= Afficher tous les utilisateurs</a></p>
+
     <form action="" method="POST">
         <label for="nom">Nom : </label>
         <input type="text" name="nom" id="nom">
