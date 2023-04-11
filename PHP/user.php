@@ -28,10 +28,10 @@
     include 'connect.php';
 
     if (isset ($_POST['submit'])) {
-        $nom = $_POST['nom'];
-        $email = $_POST['email'];
-        $mobile = $_POST['mobile'];
-        $password = $_POST['password'];
+        $nom = secure ($_POST['nom']);
+        $email = secure ($_POST['email']);
+        $mobile = secure ($_POST['mobile']);
+        $password = MD5(secure ($_POST['password']));
         $sql = "insert into user (nom, email, mobile, password) value ('$nom', '$email', '$mobile','$password')";
         $result = mysqli_query($con,$sql);
         if ($result){
@@ -41,7 +41,9 @@
             echo 'Error DB';
         }
     }
-    
+    function secure($data){
+        return  (trim (htmlentities(strip_tags($data))));
+    }
     ?>
 
 </body>
