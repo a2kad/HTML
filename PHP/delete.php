@@ -1,10 +1,21 @@
 <?php 
+
+//  Connecter le fichier 'connect.php'.
+
 include 'connect.php';
+
+//   S'il y a une demande GET
+
 if(isset($_GET['deleteid'])){
-    echo'start';
+
+//   Requête SQL
+
     $id = $_GET['deleteid'];
     $sql = "delete from user WHERE id = '$id'";
     $result = mysqli_query($con, $sql);
+
+//   Vérifiez si la requête SQL a été exécutée avec succès
+
     if ($result){
         echo'Ligne effacée';
         header('location: affichage.php');

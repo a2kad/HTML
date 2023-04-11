@@ -10,7 +10,20 @@
 
 </head>
 <body>
-    <p><a href="/PHP/user.php">Créer un utilisateur =></a></p>
+
+<!--  Menu  BOOTSTRAP  -->
+
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/PHP/user.php">Créer un utilisateur</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/PHP/affichage.php">Afficher tous les utilisateurs</a>
+        </li>
+    </ul>
+
+<!-- Tableau BOOTSTRAP -->
+
     <table class="table">
         <thead>
             <tr>
@@ -23,10 +36,22 @@
             </tr>
         </thead>
     <?php
+
+//  Connecter le fichier 'connect.php'.
+
     include 'connect.php';
+
+//   Requête SQL
+
     $sql = "select * from user";
     $result = mysqli_query($con,$sql);
+
+//   Vérifiez si la requête SQL a été exécutée avec succès
+
     if ($result){
+
+//   Utiliser une boucle pour afficher toutes les lignes de la base de données
+
         while($row = mysqli_fetch_assoc($result)){
             $id = $row['id'];
             $nom = $row['nom'];
@@ -41,10 +66,8 @@
                         <td>'.$mobile.'</td>
                         <td>'.$password.'</td>
                         <td>
-                        
                             <button type="button" class="btn btn-warning"><a href="update.php?updateid='.$id.'">Update</a></button>
                             <button type="button" class="btn btn-danger"><a href="delete.php?deleteid='.$id.'">Delete</a></button>
-                        
                         </td>
                     </tr>
                 </tbody>';
