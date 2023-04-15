@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    width: 1024px;
+}
+h1{
+    padding: 20px 0;
+}
+.inp{
+    margin: 10px 0;
+    padding: 10px;
+    width: 500px;
+    height: 20px;
+    border: 1px solid #999;
+    font-size: 20px;
+    border-radius: 4px;
+}
+textarea{
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #999;
+    font-size: 20px;
+    border-radius: 4px;
+}
+p{
+    margin: 10px 0;
+}
+legend{
+    margin: 0 10px;
+    padding: 0 5px;
+}
+fieldset{
+    width: 800px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 12px;
+}
+.radio{
+    margin: 10px 20px;
+}
+.btn {
+    width: 150px;
+    height: 40px;
+    margin: 20px 20px 20px 0;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+.submit{
+    background-color: #7bc07b;
+}
+.reset{
+    background-color: #ca7b7b;
+}
