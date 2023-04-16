@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="/PHP/EXO2/FORM/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <div class="wrapper">
         <div class="main">
+            <ul>
+                <li>
+                    <a href="index.php">Créer un utilisateur</a>
+                </li>
+                <li>
+                    <a href="affichage.php">Afficher tous les utilisateurs</a>
+                </li>
+            </ul>
             <div class="header">
                 <h1>Contacts</h1>
             </div>
@@ -64,7 +71,7 @@
                     <input class="inp" type="password" name="password" id="password">
                     <br>
                     <button value="submit" name="submit" class="btn submit" type="submit">Validé</button>
-                    <button  class="btn reset" type="reset">Annulé</button>
+                    <button  class="btn reset" type="reset" name="reset">Annulé</button>
                 </form>
             </div>
         </div>

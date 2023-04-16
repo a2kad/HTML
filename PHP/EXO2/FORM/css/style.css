@@ -61,6 +61,24 @@ fieldset{
 .submit{
     background-color: #7bc07b;
 }
+button.submit:hover{
+    background-color: green;
+}
 .reset{
     background-color: #ca7b7b;
+}
+.reset:hover{
+    background-color: red;
+}
+table{
+    text-align: center;
+}
+table a{
+    text-decoration: none;
+    color: white;
+}
+ul li{
+    margin: 20px 0;
+    padding: 10px 0;
+    list-style: none;
 }
