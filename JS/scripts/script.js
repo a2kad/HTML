@@ -1,5 +1,5 @@
-"use strict";
-let admin = "Jhon";
-let name = admin;
-let message = "Eto message";
-alert(name);
+function bonjour(){
+    var message = "Bonjour tout le monde!";
+    document.write(message);
+}
+bonjour();
