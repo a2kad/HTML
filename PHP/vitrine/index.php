@@ -7,7 +7,14 @@ if(!empty($_GET['page'])){
         case 'mountains' :
             header("Location: controllers/controller-mountains.php");
             break;
+        
     }
+    
+    
+} else if(!empty($_GET['id'])){
+    
+    header("Location: controllers/controller-product.php");
+    exit;
     
 } else {
     header("Location: controllers/controller-main.php");

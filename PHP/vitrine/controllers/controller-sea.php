@@ -3,5 +3,6 @@ require "../models/data.php";
 
 //var_dump($data);
 
-include "../views/product.php";
+include "../views/sea.php";
+
 ?>

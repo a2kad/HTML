@@ -10,13 +10,13 @@
     </div>
     <ul class="md:flex md:items-center z-[2] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
         <li class="mx-4 my-6 md:my-0">
-            <a href="/" class="text-xl hover:text-sky-800 duration-100">Acceuil</a>
+            <a href="/" class="text-xl hover:text-sky-800 duration-100">Accueil</a>
         </li>
         <li class="mx-4 my-6 md:my-0">
             <a href="/?page=sea" class="text-xl hover:text-sky-800 duration-100">La Mer</a>
         </li>
         <li class="mx-4 my-6 md:my-0">
-            <a href="/?page=mountains" class="text-xl hover:text-sky-800 duration-100">Les montagnes</a>
+            <a href="/?page=mountains" class="text-xl hover:text-sky-800 duration-100">Les Montagnes</a>
         </li>
     </ul>
 
