@@ -1,5 +1,13 @@
-<?php include "components/head.php" ?>
-<?php include "components/top.php" ?>
+<?php include "components/head.php" ;
+include "components/top.php";
+
+if(!empty($_GET['id'])){
+    $prodId = $_GET['id'];
+    
+    
+}
+
+?>
 
 <div>
     <div class="pt-6">
@@ -31,7 +39,7 @@
         <!-- Image gallery -->
         <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
             <div class="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
-                <img src="https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg" alt="Two each of gray, white, and black shirts laying flat." class="h-full w-full object-cover object-center">
+                <img src="../assets/img/travel/'<?php echo $prodId; ?>'"  class="h-full w-full object-cover object-center">
             </div>
             <div class="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
                 <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">

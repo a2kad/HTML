@@ -1,5 +1,7 @@
 <?php
 
+use function Sabre\Event\Promise\all;
+
 $data = [
 	"sea" => [
 	[
@@ -288,15 +290,17 @@ function showCategory($data, $cat){
                 </div>
                 <div class="mt-4 flex justify-between">
                     <div>
-                        <h3 class="text-lg text-gray-700">
+                        <h2 class="text-lg text-gray-700">
                             <a href="/?id='.$element["id"].'">
                                 <span aria-hidden="true" class="absolute inset-0"></span>
                                 '.$element["country"].'
                             </a>
-                        </h3>
+                        </h2>
                         <p class="mt-1 text-sm text-gray-500">'.$element["date"].'</p>
+						
                     </div>
                     <p class="text-sm font-medium text-gray-900">'.$element["price"].' &euro;</p>
+					
                 </div>
             </div>
         
@@ -304,5 +308,20 @@ function showCategory($data, $cat){
     }
 }
 
+// function showProduct ($data, $id){
+// 	if (in_array($id,$data["sea"])){
+// 		foreach ($data["sea"] as $el1){
+// 			foreach($el1[$id] as $el2){
+// 				return $el2["photo"];
+// 			}
+// 		}
+// 	} else if (in_array($id,$data["mountains"])){
+// 		foreach ($data["mountains"] as $el1){
+// 			foreach($el1[$id] as $el2){
+// 				return $el2["photo"];
+// 			}
+// 		}
+// 	}
+// 	};
 
 ?>
