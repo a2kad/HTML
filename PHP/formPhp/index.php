@@ -29,29 +29,21 @@ require_once 'controllers/controller.php';
                             <div class="row g-3">
                                 <div class="col-sm-6">
                                     <label for="firstName" class="form-label">Prénom :</label>
-                                    <input type="text" class="form-control" id="firstName" required>
-                                    <div class="invalid-feedback">
-                                        Un prénom valide est requis.
-                                    </div>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" value="<?= htmlspecialchars($_POST['firstName'] ?? '')  ?>" required>
+                                    <span class="ms-2 text-danger fs-6"><?= $errors['firstName'] ?? '' ?></span>
                                 </div>
 
                                 <div class="col-sm-6">
                                     <label for="lastName" class="form-label">NOM :</label>
-                                    <input type="text" class="form-control" id="lastName" name="lastName" value="<?= htmlspecialchars($_POST['lastname'] ?? '') ?>" required>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" value="<?= htmlspecialchars($_POST['lastName'] ?? '')  ?>" required> 
                                     <span class="ms-2 text-danger fs-6"><?= $errors['lastName'] ?? '' ?></span>
                                 </div>
 
                                 <div class="col-12">
                                     <label for="email" class="form-label">Email :</label>
-                                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
-                                    <div class="invalid-feedback">
-                                        S'il vous plaît, mettez une adresse email valide.
-                                    </div>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" value="<?= htmlspecialchars($_POST['email'] ?? '')  ?>" required>
+                                    <span class="ms-2 text-danger fs-6"><?= $errors['email'] ?? '' ?></span>
                                 </div>
-
-
-
-
 
                                 <h4 class="mb-3">Abonnement</h4>
 
@@ -106,7 +98,8 @@ require_once 'controllers/controller.php';
                 </div>
                 <div class="row g-5">
                     <div class="col">
-                        <p>Nom : <?= htmlspecialchars($_POST['lastName'] ?? '') ?></p>
+                        <p>Prénom : <?= htmlspecialchars($_POST['firstName'] ?? '')  ?></p>
+                        <p>NOM : <?= htmlspecialchars($_POST['lastName'] ?? '') ?></p>
                         <a href="index.php" class="d-block mt-3 mx-auto btn btn-secondary">Retour</a>
                     </div>
                 </div>
