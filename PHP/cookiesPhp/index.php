@@ -12,20 +12,33 @@ require_once('controller.php')
 </head>
 
 <body>
-    <?php if (!isset($_COOKIE['testCookies'])) { ?>
-        <form action="" method="post">
-            <label for="cookies">J'aime <br>
-                <input type="text" name="cookies" id="cookies"></label>
-            <br>
-            <input type="submit" value="ok">
-        </form>
-    <?php } else if (isset($_COOKIE['testCookies'])) { ?>
-        <p>Vous aimez <?= $_COOKIE['testCookies'] ?></p>
-        <form action="" method="post">
-            <input type="submit" name="del" value="del">
-        </form>
 
+
+    <?php
+    if (!isset($message)) { ?>
+        <?php if (isset($_COOKIE['cookies'])) { ?>
+            <p>Vous, vous aimez déja</p>
+            <form action="" method="POST">
+                <p><?= $_COOKIE['cookies'] ?? '' ?></p>
+                <input name="del" type="submit" value="Supprimer mon Cookie !"></input>
+            </form>
+            <a href="index.php">Recharger la page</a>
+        <?php } else { ?>
+            <form action="" method="post">
+                <label for="cookies">J'aime <br>
+                    <input type="text" name="cookies" id="cookies"></label>
+                <br>
+                <input type="submit" name="send" value="ok">
+            </form>
+        <?php } ?>
+    <?php } else { ?>
+        <p><?= $message ?></p>
+        <a href="index.php"> Back </a>
     <?php } ?>
+
+
+
+    
 </body>
 
 </html>
