@@ -163,5 +163,30 @@ class Voiture{
         $this->message = $message;
         return $this;
     }
+    public function Repeindre ($uneCouleur= null){
+        if(!isset($uneCouleur)){
+            $this->message = 'Erreur : j\'ai besoin de connaître la nouvell couleur !';
+            return false;
+        };
+        if ($uneCouleur != $this->couleur)
+        {
+            $this->message = ucfirst($uneCouleur);
+            $this->message .='!. Tu m\'as changé de couleur !';
+        }else {
+            $this->message = 'Merci de m\'avoir rafraîchi le teint !';
+        }
+        $this->couleur = $uneCouleur;
+        return true;
+    }
+    public function Mettre_essense($quantite){
+        if ($quantite > ($this->capacite_reservoir - $this->niveau_essence)){
+            $this->message = $quantite. 'l ! Tu vas moiller tes chaussures ! J\'ai déjà ';
+            $this->message .= $this->niveau_essence.' l.';
+        }else{
+            $this->niveau_essence += $quantite;
+            $this->message = 'Merci pour le carburant ! J\'ai maintenant '. $this->niveau_essence.' l.';
+        }
+        return $this->niveau_essence;
+    }
 }
 ?>
