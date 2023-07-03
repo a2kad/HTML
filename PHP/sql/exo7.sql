@@ -3,14 +3,14 @@
 SELECT DISTINCT
     id_etudiant
 FROM
-    lpecom_examens
+    lpecom_examens;
 
 -- 2 --
 
 SELECT 
     COUNT(DISTINCT id_etudiant)
 FROM
-    lpecom_examens
+    lpecom_examens;
 	
 -- 3 --
 
@@ -19,7 +19,7 @@ SELECT
 FROM
     lpecom_examens
 WHERE
-    id_examen = 45
+    id_examen = 45;
 	
 -- 4 --
 	
@@ -28,7 +28,7 @@ SELECT
 FROM
     lpecom_examens
 WHERE
-    id_examen = 87
+    id_examen = 87;
 	
 -- 5 --
 
@@ -38,7 +38,7 @@ FROM
     lpecom_examens
 WHERE
     (id_examen = 87 AND note > 11)
-        OR (id_examen = 45 AND note > 12)
+        OR (id_examen = 45 AND note > 12);
 		
 -- 6 --
 
@@ -47,7 +47,7 @@ SELECT DISTINCT
 FROM
     lpecom_examens ex
         LEFT JOIN
-    lpecom_etudiants et ON ex.id_etudiant = et.id_etudiant
+    lpecom_etudiants et ON ex.id_etudiant = et.id_etudiant;
 
 -- 7 --
 
@@ -56,7 +56,7 @@ SELECT DISTINCT
 FROM
     lpecom_examens ex
         INNER JOIN
-    lpecom_etudiants et ON ex.id_etudiant = et.id_etudiant
+    lpecom_etudiants et ON ex.id_etudiant = et.id_etudiant;
 	
 -- 8 --
 
@@ -67,7 +67,7 @@ FROM
         INNER JOIN
     lpecom_etudiants et ON ex.id_etudiant = et.id_etudiant
 WHERE
-    et.id_etudiant = 30
+    et.id_etudiant = 30;
 	
 -- 9 --
 
@@ -78,4 +78,4 @@ FROM
         INNER JOIN
     lpecom_etudiants et ON ex.id_etudiant = et.id_etudiant
 ORDER BY ex.note DESC
-LIMIT 3
+LIMIT 3;
