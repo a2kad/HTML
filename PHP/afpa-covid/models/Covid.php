@@ -10,23 +10,15 @@ class Covid{
     private int  $couv_dose1;
     private int  $couv_dose2;
 
-    function getAllVactinations(){
-        $host = 'localhost';
-        $db = 'bdd-exercices';
-        $user = 'covid';
-        $password = 'covid';
-$dbh = "mysql:host=$host;dbname=$db";
-        try {
-            $pdo = new PDO ($dbh, $user, $password);
-            if ($pdo){
-            echo 'Connection OK';
-            }
-            
-        } catch (PDOException $e) {
-            echo $e->getMessage();
-            
-        }
+    public static function getAllVactinations() : array{
+        $pdo = Database::getInstancePDO();
+
+        $sql = "SELECT `id_region` AS 'region_id', `name` AS 'region_name', MAX(`n_cum_dose1`) AS 'dose1_total', MAX(`n_cum_dose2`) AS 'dose2_total' FROM `lpecom_covid` INNER JOIN `lpecom_departments` ON `lpecom_covid`.`id_region` = `lpecom_departments`.`code` GROUP BY `name`";
+        
+        $pdo_statement = $pdo->query($sql);
+        $result = $pdo_statement->fetchAll(PDO::FETCH_ASSOC);
+
+        return $result;
     }
 
 }
-?>

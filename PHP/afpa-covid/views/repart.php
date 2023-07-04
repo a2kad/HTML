@@ -5,21 +5,28 @@
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>Région ID</th>
+            <th>Type vaccin</th>
+            <th>Région Num</th>
             <th>Nom de la région</th>
             <th>Total 1ère dose</th>
             <th>Total 2ème dose</th>
+            <th> - </th>
         </tr>
     </thead>
     <tbody>
-    <?php
+        <?php
         // je boucle sur le tableau $result
-        foreach ( Covid::getAllVactinations() as $row) { ?>
+        foreach (Repart::getVactinationsRepart() as $value) {
+            
+
+            ?>
             <tr>
-                <td><?= $row['region_id'] ?></td>
-                <td><?= $row['region_name'] ?></td>
-                <td><?= $row['dose1_total'] ?></td>
-                <td><?= $row['dose2_total'] ?></td>
+                <td><?= $value['vaccin_name'] ?></td>
+                <td><?= $value['departament_code'] ?></td>
+                <td><?= $value['departament_name'] ?></td>
+                <td><?= $value['total_dose1'] ?></td>
+                <td><?= $value['total_dose2'] ?></td>
+                
             </tr>
 
         <?php } ?>

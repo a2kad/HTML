@@ -7,5 +7,6 @@
     <title>AFPA COVID</title>
 </head>
 <body>
+    <div class="container">
     <div>Header</div>
 
